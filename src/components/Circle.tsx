@@ -19,10 +19,10 @@ interface CircleProps {
   text?: string;
 }
 
-function Circle({ bgColor, borderColor, text="default text" }: CircleProps) {
+function Circle({ bgColor, borderColor, text = "default text" }: CircleProps) {
   return (
     <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}>
-      {text}l{" "}
+      {text}
     </Container>
   );
 }
